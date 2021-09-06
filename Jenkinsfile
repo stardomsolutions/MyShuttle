@@ -16,6 +16,11 @@ pipeline {
                 sh "mvn sonar:sonar -Dsonar.host.url=http://20.110.49.31:9000 -Dmaven.test.skip=true"
             }
         }
+		stage('DeployToDevEnv') {
+			steps {
+				sh "scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/demo-webapp-build/target/myshuttledev.war azureuser@20.110.17.156:/opt/tomcat/webapps"
+			}
+		}
 
     }
 }
