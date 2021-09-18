@@ -18,17 +18,17 @@ pipeline {
         }
 	stage('DeployToDevEnv') {
 		steps {
-			sh "scp -o StrictHostKeyChecking=no target/myshuttledev.war azureuser@20.49.24.95:/opt/tomcat/webapps"
+			sh "scp -o StrictHostKeyChecking=no target/myshuttledev.war azureuser@52.179.142.164:/opt/tomcat/webapps"
 		}
 	}
 	stage('DeployToQAEnv') {
 		steps {
-			sh "scp -o StrictHostKeyChecking=no target/myshuttledev.war azureuser@20.98.240.26:/opt/tomcat/webapps"
+			sh "scp -o StrictHostKeyChecking=no target/myshuttledev.war azureuser@20.65.11.148:/opt/tomcat/webapps"
 		}
 	}
 	stage('DeployToProdEnv') {
 		steps {
-			sh "scp -o StrictHostKeyChecking=no target/myshuttledev.war azureuser@104.46.111.104:/opt/tomcat/webapps"
+			sh "scp -o StrictHostKeyChecking=no target/myshuttledev.war azureuser@20.109.101.219:/opt/tomcat/webapps"
 		}
 	}
 
