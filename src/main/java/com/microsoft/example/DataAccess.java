@@ -22,7 +22,7 @@ public class DataAccess
 {
 	// Some database-specific details we'll need
 	private static final String DB_DRIVER = "com.mysql.jdbc.Driver";
-	private static final String DB_URL = "jdbc:mysql://myahuttleapp-mysqldb.mysql.database.azure.com:3306/MyShuttleDb?useSSL=true&requireSSL=false";
+	private static final String DB_URL = "jdbc:mysql://myahuttleapp-mysqldb.mysql.database.azure.com:3306/alm";
 	private static final String DB_USER = "adminuser@myahuttleapp-mysqldb";
 	private static final String DB_PASS = "Orton@287";
 	
