@@ -18,7 +18,7 @@ pipeline {
         }
 	stage('DeployToDevEnv') {
 		steps {
-			sh "scp -o StrictHostKeyChecking=no target/myshuttledev.war azureuser@52.179.142.164:/opt/tomcat/webapps"
+			sh "scp -o StrictHostKeyChecking=no target/myshuttledev.war azureuser@20.65.34.68:/opt/tomcat/webapps"
 		}
 	}
 	stage('DeployToQAEnv') {
