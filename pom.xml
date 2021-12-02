@@ -106,7 +106,6 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-<repositories>
 <distributionManagement>
 <repository>
   <id>ksr-azuredevops-demos</id>
@@ -119,5 +118,4 @@
   </snapshots>
 </repository>
 </distributionManagement>
-</repositories>
 </project>
