@@ -107,6 +107,7 @@
     </dependency>
   </dependencies>
 <repositories>
+<distributionManagement>
 <repository>
   <id>ksr-azuredevops-demos</id>
   <url>https://pkgs.dev.azure.com/ksr-azuredevops-demos/_packaging/ksr-azuredevops-demos/maven/v1</url>
@@ -117,5 +118,6 @@
     <enabled>true</enabled>
   </snapshots>
 </repository>
+</distributionManagement>
 </repositories>
 </project>
