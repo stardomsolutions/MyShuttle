@@ -106,16 +106,4 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-<distributionManagement>
-<repository>
-  <id>ksr-azuredevops-demos</id>
-  <url>https://pkgs.dev.azure.com/ksr-azuredevops-demos/_packaging/ksr-azuredevops-demos/maven/v1</url>
-  <releases>
-    <enabled>true</enabled>
-  </releases>
-  <snapshots>
-    <enabled>true</enabled>
-  </snapshots>
-</repository>
-</distributionManagement>
 </project>
